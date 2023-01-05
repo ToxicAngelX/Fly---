@@ -1,9 +1,9 @@
-package me.illuminatiproductions.illuminatifly;
-
-import me.illuminatiproductions.illuminatifly.commands.Fly;
+import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
+import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class ToxicFly extends JavaPlugin {
+public final class toxiccoder extends JavaPlugin {
 
     @Override
     public void onEnable() {
