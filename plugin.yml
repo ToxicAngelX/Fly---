@@ -1,11 +1,8 @@
-name: IlluminatiFly
-version: ${project.version}
-main: me.illuminatiproductions.illuminatifly.IlluminatiFly
-api-version: 1.13
-authors: [Illuminatiiiiii]
-description: Allows players to fly, with style
-website: https://youtube.com/c/IlluminatiProductions
+name: ToxicCoding
+version: '${project.version}'
+main: me.toxiccoder.me.toxiccoder.Me.toxiccoder
+api-version: 1.19
 commands:
   fly:
-    description: Fly like a bird
+    description: Fly like a ghost 
     usage: /<command>
