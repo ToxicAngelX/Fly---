@@ -1,6 +1,5 @@
-package me.illuminatiproductions.illuminatifly.commands;
+package me.toxiccoder.me.toxiccoder.Me.command;
 
-import me.illuminatiproductions.illuminatifly.IlluminatiFly;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -25,7 +24,7 @@ public class Fly implements CommandExecutor {
             Player player = (Player) sender;
             String onMessage = plugin.getConfig().getString("on-message");
             String offMessage = plugin.getConfig().getString("off-message");
-            if(player.hasPermission("illuminatifly.fly")){
+            if(player.hasPermission("toxic.fly")){
                 if (list_of_flying_people.contains(player)){
                     list_of_flying_people.remove(player);
                     player.sendMessage(ChatColor.translateAlternateColorCodes('&', offMessage));
@@ -36,7 +35,7 @@ public class Fly implements CommandExecutor {
                     player.setAllowFlight(true);
                 }
             }else{
-                player.sendMessage(ChatColor.GREEN + "You don't have the " + ChatColor.YELLOW + "illuminatifly.fly " + ChatColor.GREEN + "permission required to use this command.");
+                player.sendMessage(ChatColor.GREEN + "You don't have the " + ChatColor.YELLOW + "toxic.fly " + ChatColor.GREEN + "permission required to use this command.");
             }
         }else{
             System.out.println("You must be a player to fly.");
